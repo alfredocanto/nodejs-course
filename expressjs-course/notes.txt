@@ -1,0 +1,12 @@
+HTTP VERBS de REST(Representation state transfer)
+- Cuando el cliente pide una ruta, por ejemplo /about, es una peticion GET
+- Tambien existe POST, que es cuando el cliente quiere crear o guardar algo en el server con info
+- PUT sirve cuando el cliente quiere actualizar un recurso ya existente
+- PATCH sirve para actualizar un recurso parcialmente
+- DELETE cuando el cliente trata de eliminar un dato del servidor
+
+200 - ok
+204 - ok, no return
+304 - El recurso no fue actualizado desde tu ultima consulta
+404 - not found
+500 - server error
