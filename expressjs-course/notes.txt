@@ -10,3 +10,9 @@ HTTP VERBS de REST(Representation state transfer)
 304 - El recurso no fue actualizado desde tu ultima consulta
 404 - not found
 500 - server error
+
+
+REQUEST or RESPONSE 
+Endpoint = ruta
+Body = contenido (json, imagen, etc)
+Header = informacion adicional, status code
