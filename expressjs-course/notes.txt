@@ -16,3 +16,5 @@ REQUEST or RESPONSE
 Endpoint = ruta
 Body = contenido (json, imagen, etc)
 Header = informacion adicional, status code
+
+API = application programming interface
