@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+<h1><%= title %></h1> <!--interpolation from express-->
+<!--El igual sirve para recibir un valor-->
+<% if (isActive){ %>
+    <p>El servidor esta activo</p>
+<% } else { %>
+    <p>El servidor esta inactivo</p>
+<% } %>
+
+<ul>
+    <% for (let i = 0; i < users.length; i++) { %>
+        <li><%= users[i].name %> <%= users[i].lastname %></li>
+   <% } %> 
+</ul>
+
+
+<%- include('partials/footer') %>
+

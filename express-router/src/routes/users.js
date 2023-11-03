@@ -1,24 +1,12 @@
-const express = require("express")
+const express = require('express')
 const router = express.Router()
 
-router.get("/profile", (req, res) => {
-  res.send("profile page")
+router.get('/users', (req, res) => {
+  res.render('users.ejs')
 })
 
-router.all("/login", (req, res) => {
-  res.send("login page")
-})
-
-router.use((req, res, next) => {
-  if (req.query.login === "alfredo@email.com") {
-    next()
-  } else {
-    res.send("No authorized")
-  }
-})
-
-router.get("/dashboard", (req, res) => {
-  res.send("dashboard page")
+router.get('/login', (req, res) => {
+  res.send('login page')
 })
 
 module.exports = router

@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<h1>Posts</h1>
+<!--AXIOS es un modulo para realizar peticiones a otro servidor o db, node tiene una forma
+interna tambien de hacer peticiones con el fetch-->
+<% for (let i = 0; i < posts.length; i++) { %>
+    <article>
+        <h1><%= posts[i].title %></h1>
+        <p><%= posts[i].body %></p>
+        <small><%= posts[i].id %></small>
+    </article>
+<% } %>
+
+<%- include('partials/footer') %>
